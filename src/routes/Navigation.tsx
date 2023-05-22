@@ -1,11 +1,26 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home } from '../components';
+import { Cars, Home, Navbar } from '../components';
 
 export const Navigation = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <Navbar>
+              <Home />
+            </Navbar>
+          }
+        />
+        <Route
+          path="/cars"
+          element={
+            <Navbar>
+              <Cars />
+            </Navbar>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
