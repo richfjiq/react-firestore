@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export const FooterComp = () => {
+export const Footer = () => {
   return (
     <footer className="container">
       <p className="float-right">
